@@ -1,0 +1,142 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0)
+}
+
+.inner{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.inner1{
+    max-width: 1430px;
+    margin: 0 auto;
+}
+
+
+/* 메인공통  */
+ .group-title{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.group-title .title{
+    font-size: 20px;
+}
+
+.group-title p{   
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.headline{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* 이미지가 나오고싶다면... */
+.sc-visual .control-area .autoplay{
+    background-image: url(../img/icon_set_common_2019.png);
+    background-repeat: no-repeat;
+}
+
+/* 퀵메뉴 */
+.quick-wrap {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 5;
+}
+.quick-wrap .btns{
+    position: relative;
+}
+.quick-wrap .btns .search,
+.quick-wrap .btns .kakao{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.quick-wrap .btns .close{
+    position: relative;
+    z-index: 1;
+}
+
+.quick-wrap .btns .search{
+    transition: .3s;
+}
+.quick-wrap .btns .kakao{
+    transition: .3s;
+}
+
+.quick-wrap .btns.on .search{
+    transform: translateY(-100%);
+}
+.quick-wrap .btns.on .kakao{
+    transform: translateY(-200%);
+}
+
+.quick-wrap .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 25px;
+    /* background: #f00; */
+}
+.quick-wrap .btn.search{background: #4588c9;} 
+.quick-wrap .btn.kakao{background: #fae100;} 
+.quick-wrap .btn.top{
+    display: none;
+    background: #fff;
+}
+.quick-wrap .btn.top img{
+    margin-left: 13.5px;
+}
+.quick-wrap .btn.top.on{
+    display: block;
+    
+}
+.quick-wrap .btn.close{
+    background: #aba403;
+}
+
+.quick-wrap .open {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transform: translateY(0);
+}
+
+
+.open .btn.top.on{
+    display: block;
+}
+
+.quick-wrap.on .open{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*767~1198px (1198에서바뀜) */
+
+/* 헤더 영역 */
+@media (max-width:1199px) {
+    .group-title .title{font-size: 18px;}
+    .headline{font-size: 33px;}
+ }
+
+/* 320~766 (766에서 바뀜)*/
+@media (max-width:767px) {
+}

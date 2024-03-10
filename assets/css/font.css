@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Pretendard,sans-serif';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Pretendard,sans-serif';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Pretendard,sans-serif';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Pretendard,sans-serif';
+    src: url('../font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Pretendard,sans-serif';
+    src: url('../font/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+/* 폰트 아이콘 */
+@font-face {
+    font-family: 'remixicon';
+    src: url('../font/remixicon.woff') format('woff');
+    font-weight: 400;
+}
+
+/* 영문 폰트 */
+@font-face {
+    font-family: 'adobe-garamond-pro,sans-serif';
+    src: url('../font/AGaramondPro-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'adobe-garamond-pro,sans-serif';
+    src: url('../font/AGaramondPro-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'adobe-garamond-pro,sans-serif';
+    src: url('../font/AGaramondPro-Bold.woff') format('woff');
+    font-weight: 700;
+}
